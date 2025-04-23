@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>人員增補申請表</title>
+    </head>
+    <body>
+        <section>
+            <form>
+                <table>
+                    <th colspan="4">人員增補申請表</th>
+                    <tr>
+                        <td>填表日期：</td>
+                        <td colspan="3"><input type="date" name="date" /></td>
+                    </tr>
+                    <tr>
+                        <td>姓名：</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder=" i am placeholder"
+                            />
+                        </td>
+                        <td>增補職稱：</td>
+                        <td><input type="text" name="position" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>增補原因：</td>
+                        <td colspan="3">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="reason"
+                                    value="年度計劃內"
+                                    checked
+                                />
+                                年度計劃內</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="reason"
+                                    value="職位出缺"
+                                />
+                                職位出缺</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="reason"
+                                    value="專案申請"
+                                />
+                                專案申請</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="reason"
+                                    value="其他"
+                                />
+                                其他</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>增補方式：</td>
+                        <td colspan="3">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="method"
+                                    value="內部調職"
+                                />
+                                內部調職</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="method"
+                                    value="對外徵才"
+                                    checked
+                                />
+                                對外徵才</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>預計到職日期：</td>
+                        <td colspan="3">
+                            <input type="date" name="expected_date" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">工作內容</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <textarea
+                                name="job_description"
+                                rows="5"
+                            ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">基本條件</th>
+                    </tr>
+                    <tr>
+                        <td>性別：</td>
+                        <td colspan="3">
+                            <label
+                                ><input type="radio" name="gender" value="男" />
+                                男</label
+                            >
+                            <label
+                                ><input type="radio" name="gender" value="女" />
+                                女</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="gender"
+                                    value="不限"
+                                />
+                                不限</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>年齡：</td>
+                        <td colspan="3">
+                            <input type="text" name="age" /> 歲以下
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>學歷：</td>
+                        <td colspan="3">
+                            <select name="education">
+                                <option value="高中">高中</option>
+                                <option value="專科">專科</option>
+                                <option value="大學">大學</option>
+                                <option value="碩士">碩士</option>
+                                <option value="博士">博士</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>相關科系：</td>
+                        <td colspan="3">
+                            <select name="related_field">
+                                <option value="相關科系">相關科系</option>
+                                <option value="不限科系">不限科系</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">語言能力</th>
+                    </tr>
+                    <tr>
+                        <td>英文：</td>
+                        <td colspan="3">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="english"
+                                    value="不限"
+                                />
+                                不限</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="english"
+                                    value="具閱讀能力"
+                                />
+                                具閱讀能力</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="english"
+                                    value="具一般溝通能力"
+                                />
+                                具一般溝通能力</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="english"
+                                    value="聽說讀寫流利"
+                                />
+                                聽說讀寫流利</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>日文：</td>
+                        <td colspan="3">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="japanese"
+                                    value="不限"
+                                />
+                                不限</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="japanese"
+                                    value="具閱讀能力"
+                                />
+                                具閱讀能力</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="japanese"
+                                    value="具一般溝通能力"
+                                />
+                                具一般溝通能力</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="japanese"
+                                    value="聽說讀寫流利"
+                                />
+                                聽說讀寫流利</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">電腦文書處理能力</th>
+                    </tr>
+                    <tr>
+                        <td>WORD：</td>
+                        <td colspan="3">
+                            <label
+                                ><input type="radio" name="word" value="不限" />
+                                不限</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="word"
+                                    value="能應用"
+                                />
+                                能應用</label
+                            >
+                            <label
+                                ><input type="radio" name="word" value="熟練" />
+                                熟練</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EXCEL：</td>
+                        <td colspan="3">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="excel"
+                                    value="不限"
+                                />
+                                不限</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="excel"
+                                    value="能應用"
+                                />
+                                能應用</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="excel"
+                                    value="熟練"
+                                />
+                                熟練</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>POWER POINT：</td>
+                        <td colspan="3">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="powerpoint"
+                                    value="不限"
+                                />
+                                不限</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="powerpoint"
+                                    value="能應用"
+                                />
+                                能應用</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="powerpoint"
+                                    value="熟練"
+                                />
+                                熟練</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ACCESS：</td>
+                        <td colspan="3">
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="access"
+                                    value="不限"
+                                />
+                                不限</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="access"
+                                    value="能應用"
+                                />
+                                能應用</label
+                            >
+                            <label
+                                ><input
+                                    type="radio"
+                                    name="access"
+                                    value="熟練"
+                                />
+                                熟練</label
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">其他專長及技能</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <textarea name="other_skills" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">興趣 (多選)</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="interestContent">
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="閱讀"
+                                />
+                                閱讀</label
+                            >
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="運動"
+                                />
+                                運動</label
+                            >
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="旅遊"
+                                />
+                                旅遊</label
+                            >
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="音樂"
+                                />
+                                音樂</label
+                            >
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="電影"
+                                    checked
+                                />
+                                電影</label
+                            >
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </body>
+</html>
+<script defer>
+    // 已用 defer 確保HTML parsing後執行
+    const today = new Date().toISOString().split("T")[0];
+
+    // 有兩個date
+    document.querySelectorAll('input[type="date"]').forEach((item) => {
+        item.value = today; // 有兩個
+    });
+</script>
+<style>
+    body {
+        background-color: black;
+    }
+    section {
+        background-color: white;
+        width: 1080px;
+        margin: 100px auto;
+        padding: 80px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 2px solid black;
+        padding: 8px 16px;
+        text-align: left;
+    }
+
+    th {
+        background-color: darkblue;
+        color: white;
+    }
+    .radio {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        margin-right: 5px;
+    }
+    input {
+        accent-color: darkblue;
+    }
+    input,
+    textarea {
+        border-radius: 5px;
+    }
+
+    textarea {
+        display: block;
+        width: 90%;
+        margin: 8px auto;
+    }
+
+    label:has(input[type="checkbox"]:checked) {
+        color: darkblue;
+        font-weight: bold;
+    }
+
+    label:has(input[type="radio"]:checked) {
+        color: darkblue;
+        font-weight: bold;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: 2px solid lightblue;
+        outline-offset: 2px;
+    }
+
+    .interestContent {
+        padding: 28px 52px;
+    }
+</style>
