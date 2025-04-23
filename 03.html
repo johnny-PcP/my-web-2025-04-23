@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            table {
+                width: 80%;
+                margin: auto;
+                text-align: center;
+            }
+            table,
+            tr,
+            td,
+            th {
+                border: 1px solid black;
+            }
+            td {
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>table</h1>
+        <table>
+            <tr>
+                <td>節數</td>
+                <td>一</td>
+                <td>二</td>
+                <td>三</td>
+                <td>四</td>
+                <td>五</td>
+            </tr>
+            <tr>
+                <td>早自習</td>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td>第一節</td>
+                <td rowspan="2">X1</td>
+                <td colspan="3">X</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>第二節</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>第三節</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td rowspan="2">X</td>
+            </tr>
+            <tr>
+                <td>第四節</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>午休</td>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td>第五節</td>
+                <td>X</td>
+                <td rowspan="2">X</td>
+                <td rowspan="3">X</td>
+                <td rowspan="3">X</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>第六節</td>
+                <td>X</td>
+
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>第七節</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>
+        </table>
+    </body>
+</html>
