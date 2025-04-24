@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>喜歡的食物</title>
+    </head>
+
+    <body>
+        <section>
+            <h1>喜歡的食物</h1>
+            <div>
+                <a href="./food-1.html">
+                    <img src="./images/燒肉.jpg" alt="" />
+                    <p>燒肉</p>
+                </a>
+                <a href="./food-2.html">
+                    <img src="./images/瓦煲臘腸雞飯.jpg" alt="" />
+                    <p>瓦煲臘腸雞飯</p>
+                </a>
+                <a href="./food-3.html">
+                    <img src="./images/麻辣鍋.jpg" alt="" />
+                    <p>麻辣鍋</p>
+                </a>
+            </div>
+        </section>
+    </body>
+</html>
+<style>
+    body {
+        background-color: black;
+        text-align: center;
+        padding: 0px 50px;
+    }
+
+    section {
+        background-color: white;
+        max-width: 1080px;
+        min-width: 500px;
+        margin: 100px auto;
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    img {
+        border-radius: 15px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(207, 207, 207);
+        border-radius: 15px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        flex: 1 0 30%;
+        margin: 5px;
+    }
+
+    p {
+        margin: 5px auto 5px;
+    }
+    a:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+</style>

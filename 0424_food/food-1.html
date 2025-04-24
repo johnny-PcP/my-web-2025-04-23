@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>喜歡的食物</title>
+    </head>
+
+    <body>
+        <section>
+            <h1>喜歡的食物</h1>
+            <div>
+                <a target="_blank" href="https://www.godhotpot.com/bbq">
+                    <img src="./images/燒肉.jpg" alt="" />
+                    <p>燒肉</p>
+                </a>
+            </div>
+            <hr />
+            <a href="./" class="btn">回上一頁</a>
+        </section>
+    </body>
+</html>
+<style>
+    body {
+        background-color: black;
+        text-align: center;
+        padding: 0px 50px;
+    }
+
+    section {
+        background-color: white;
+        max-width: 1080px;
+        min-width: 500px;
+        margin: 100px auto;
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    img {
+        border-radius: 15px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        background-color: rgb(207, 207, 207);
+        display: inline-block;
+        border-radius: 15px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        flex: 1 0 30%;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+
+    p {
+        margin: 5px auto 5px;
+    }
+    a:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+        min-width: 400px;
+        margin: auto;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+    .btn {
+        padding: 8px 16px;
+        background-color: rgb(241, 183, 55);
+        color: black;
+    }
+</style>
