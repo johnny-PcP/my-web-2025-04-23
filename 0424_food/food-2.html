@@ -11,18 +11,29 @@
             <h1>喜歡的食物</h1>
             <div>
                 <a
+                    onmouseleave="handelOnmouseleave(this)"
+                    onmouseover="handelOnmousein(this)"
                     target="_blank"
                     href="https://www.facebook.com/mrcheekopitiam/?locale=zh_TW"
                 >
                     <img src="./images/瓦煲臘腸雞飯.jpg" alt="" />
-                    <p>瓦煲臘腸雞飯</p>
+                    <p>Hover 瓦煲臘腸雞飯</p>
                 </a>
             </div>
             <hr />
-            <a href="./" class="btn">回上一頁</a>
+            <a href="./index.html" class="btn">回上一頁</a>
         </section>
     </body>
 </html>
+<script>
+    function handelOnmousein(element) {
+        element.querySelector("p").innerText = "開啟推薦店家";
+    }
+
+    function handelOnmouseleave(element) {
+        element.querySelector("p").innerText = "Hover 瓦煲臘腸雞飯";
+    }
+</script>
 <style>
     body {
         background-color: black;

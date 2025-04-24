@@ -10,16 +10,30 @@
         <section>
             <h1>喜歡的食物</h1>
             <div>
-                <a target="_blank" href="https://www.godhotpot.com/bbq">
+                <a
+                    onmouseleave="handelOnmouseleave(this)"
+                    onmouseover="handelOnmousein(this)"
+                    target="_blank"
+                    href="https://www.godhotpot.com/bbq"
+                >
                     <img src="./images/燒肉.jpg" alt="" />
-                    <p>燒肉</p>
+                    <p>Hover 燒肉</p>
                 </a>
             </div>
             <hr />
-            <a href="./" class="btn">回上一頁</a>
+            <a href="./index.html" class="btn">回上一頁</a>
         </section>
     </body>
 </html>
+<script>
+    function handelOnmousein(element) {
+        element.querySelector("p").innerText = "開啟推薦店家";
+    }
+
+    function handelOnmouseleave(element) {
+        element.querySelector("p").innerText = "Hover 燒肉";
+    }
+</script>
 <style>
     body {
         background-color: black;
