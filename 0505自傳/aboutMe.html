@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                line-height: 1.6;
+                background-color: #f4f4f9;
+                color: #f4f4f9;
+                padding: 50px;
+            }
+            h1 {
+                height: 50px;
+            }
+            h2 {
+                height: 20px;
+            }
+            p {
+                margin: 10px 0;
+            }
+            .highlight {
+                color: #d9534f;
+                font-weight: bold;
+            }
+
+            section {
+                background: #525799;
+                border-radius: 15px;
+                padding: 30px 50px;
+                position: relative;
+                margin: auto;
+                width: 500px;
+                height: 600px;
+                border-radius: 30px;
+                box-shadow: 10px 10px 10px 5px gray;
+                overflow-y: scroll;
+
+                /* 卷軸的條狀 */
+                scroll-snap-type: y mandatory;
+                scroll-margin-top: 200px;
+
+                h1 {
+                    scroll-snap-align: start;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: 10px;
+                    margin: 20px; /* 可以讓上下不要超過 */
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background: rgba(244, 244, 249);
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    background: rgb(201, 126, 13);
+                }
+
+                img {
+                    position: absolute;
+                    top: 40px;
+                    right: 30px;
+                    anchor-scope: 1/1;
+                    border-radius: 15px;
+                    height: 150px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="section">
+            <img src="https://picsum.photos/300/200/?random=1" />
+            <h1>你好，我是小明</h1>
+            <h2>我在玩原生巢狀選擇器</h2>
+            <h2>+</h2>
+            <h2>客製 scrollbar ⮕</h2>
+            <hr />
+            <p>我是一名熱愛學習的學生，正在學習網頁設計。</p>
+            <p>
+                我的興趣包括：<span class="highlight">寫程式、閱讀、旅遊</span
+                >。
+            </p>
+            <p>希望未來能成為一名優秀的前端工程師！</p>
+            <p>
+                我從小就對科技充滿熱情，尤其是對電腦和網路技術的探索。高中時，我第一次接觸到程式設計，從那時起，我便深深地愛上了這門學科。大學期間，我選修了多門與資訊技術相關的課程，並參與了多個專案，這些經歷讓我對前端開發產生了濃厚的興趣。
+            </p>
+            <p>
+                在學習的過程中，我發現自己特別喜歡解決問題的過程，無論是撰寫程式碼還是設計使用者介面，這些挑戰都讓我感到無比充實。我也喜歡與團隊合作，因為每次的合作都能讓我學到新的知識，並提升自己的能力。
+            </p>
+            <p>
+                除了學業，我也積極參與課外活動，例如加入學校的程式設計社團，並參加了多次黑客松比賽。在這些活動中，我不僅提升了自己的技術能力，還結識了許多志同道合的朋友。我們經常一起討論技術趨勢，分享學習心得，這些經歷讓我更加堅定了成為一名前端工程師的目標。
+            </p>
+            <p>
+                在未來，我希望能夠進一步提升自己的技術能力，學習更多關於使用者體驗設計和前端框架的知識。我也希望能夠參與更多實際專案，將所學應用到實際情境中，並為使用者帶來更好的體驗。我相信，只要持續努力，我一定能實現自己的夢想，成為一名優秀的前端工程師。
+            </p>
+        </section>
+    </body>
+</html>

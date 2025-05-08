@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #container {
+            scroll-behavior: smooth;
+            position: relative;
+            width: 80%;
+            aspect-ratio: 3/1;
+            margin: auto;
+            border: solid black 2px;
+            overflow-x: hidden;
+
+            scroll-snap-type: y mandatory; /* 要設定才能生效 定位之後往偏移 */
+            overflow-y: scroll;
+        }
+
+        .blue {
+            background-color: lightblue;
+            width: 95%;
+            aspect-ratio: 3/1;
+        }
+
+        .green {
+            background-color: lightgreen;
+            width: 80%;
+            aspect-ratio: 4/1;
+            scroll-snap-align: start;
+            /* scroll-margin-top: 50px;  */
+            /* 定位之後往偏移 */
+            scroll-margin-block-end: 20px;
+        }
+
+        .blue,
+        .green {
+            margin: 2px;
+        }
+    </style>
+
+    <body>
+        <h3>CSS scroll-margin-top property.</h3>
+        <p>
+            Scroll-margin-top property is set on the child elements, so that
+            snap position on the top side is offset by a distance to the
+            container.
+        </p>
+
+        <div id="container">
+            <div class="blue"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="green"></div>
+        </div>
+    </body>
+</html>

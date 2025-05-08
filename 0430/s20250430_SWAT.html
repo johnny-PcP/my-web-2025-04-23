@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SWOT分析</title>
+        <style>
+            body {
+                padding: 150px 0px;
+            }
+            section {
+                position: relative;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                width: 600px;
+                height: 600px;
+                justify-content: space-between;
+                align-items: space-between;
+                overflow: hidden;
+                border-radius: 30px;
+                border: 3px solid black;
+                box-shadow: 10px 10px 10px 5px gray;
+            }
+
+            .circle {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            section div {
+                flex: 0 1 auto;
+                border: 1px solid black;
+                width: 300px;
+                height: 300px;
+                box-sizing: border-box;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+            }
+
+            section div p {
+                font-size: 28px;
+                margin: 5px;
+            }
+            section div p:first-child {
+                font-size: 48px;
+                font-weight: bold;
+            }
+
+            #box11 {
+                color: white;
+                background-color: blue;
+            }
+            #box12 {
+                color: white;
+                background-color: red;
+            }
+            #box21 {
+                color: black;
+                background-color: yellow;
+            }
+            #box22 {
+                color: white;
+                background-color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <div class="circle">
+                <p>SWOT</p>
+                <p>分析</p>
+            </div>
+            <div id="box11" class="box">
+                <p>優勢</p>
+                <p>Strength</p>
+            </div>
+            <div id="box12" class="box">
+                <p>劣勢</p>
+                <p>Weakness</p>
+            </div>
+            <div id="box21" class="box">
+                <p>機會</p>
+                <p>Opportunity</p>
+            </div>
+            <div id="box22" class="box">
+                <p>威脅</p>
+                <p>Threat</p>
+            </div>
+        </section>
+    </body>
+</html>
